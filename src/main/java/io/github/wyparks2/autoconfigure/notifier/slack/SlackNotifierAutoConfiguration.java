@@ -1,12 +1,14 @@
 package io.github.wyparks2.autoconfigure.notifier.slack;
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.client.RestTemplate;
 import reactor.core.publisher.EmitterProcessor;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.FluxSink;
@@ -14,6 +16,7 @@ import reactor.core.scheduler.Schedulers;
 
 @Configuration
 @AutoConfigureAfter(WebMvcAutoConfiguration.class)
+@ConditionalOnClass(RestTemplate.class)
 @ConditionalOnProperty(name = "notifier.slack.enabled", havingValue = "true")
 @EnableConfigurationProperties(SlackNotifierProperties.class)
 public class SlackNotifierAutoConfiguration {
