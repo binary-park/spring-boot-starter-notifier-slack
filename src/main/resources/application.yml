@@ -1,0 +1,5 @@
+sender:
+  slack:
+    enabled: false
+    buffer-size: 100
+    send-period: 30
