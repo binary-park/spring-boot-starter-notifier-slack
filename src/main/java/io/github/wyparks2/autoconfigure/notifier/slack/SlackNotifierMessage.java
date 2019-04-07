@@ -1,4 +1,4 @@
-package io.github.wyparks2.springbootstarternotislack;
+package io.github.wyparks2.autoconfigure.notifier.slack;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -9,9 +9,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @Builder
-public class SlackMessage {
-
+public class SlackNotifierMessage {
     private String title;
-
     private String text;
 }

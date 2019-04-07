@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "notifier.slack.enabled",
+      "type": "java.lang.Boolean",
+      "description": "true 또는 false"
+    },
+    {
+      "name": "notifier.slack.buffer-size",
+      "type": "java.lang.Integer",
+      "description": "버퍼 사이즈 설정"
+    },
+    {
+      "name": "notifier.slack.period",
+      "type": "java.lang.Integer",
+      "description": "발송 주기 설정"
+    },
+    {
+      "name": "notifier.slack.web-hook-url",
+      "type": "java.lang.String",
+      "description": "Slack Web Hook URL"
+    },
+    {
+      "name": "notifier.slack.channel",
+      "type": "java.lang.String",
+      "description": "Slack Web Hook 채널"
+    }
+  ]
+}

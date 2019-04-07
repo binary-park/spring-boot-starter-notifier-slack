@@ -1,4 +1,4 @@
-package io.github.wyparks2.springbootstarternotislack;
+package io.github.wyparks2.autoconfigure;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

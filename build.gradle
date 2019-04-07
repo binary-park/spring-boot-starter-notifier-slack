@@ -21,6 +21,7 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
     compile group: 'io.projectreactor', name: 'reactor-core', version: '3.2.8.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.4.RELEASE'
     compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure-processor', version: '2.1.4.RELEASE'

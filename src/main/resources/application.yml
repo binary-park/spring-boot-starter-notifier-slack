@@ -1,5 +1,7 @@
-sender:
+notifier:
   slack:
-    enabled: false
+    enabled: true
+    web-hook-url:
+    channel:
     buffer-size: 100
     send-period: 30

@@ -3,4 +3,4 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
-rootProject.name = 'spring-boot-starter-sender-slack'
+rootProject.name = 'spring-boot-starter-notifier-slack'
